@@ -1,0 +1,15 @@
+chrome_pgo_phase=0
+symbol_level=0
+blink_symbol_level=0
+v8_symbol_level=0
+
+is_debug=false
+is_official_build=true
+enable_linux_installer=true
+
+proprietary_codecs=true
+media_use_openh264=true
+ffmpeg_branding="Chrome"
+
+enable_nacl=false
+enable_widevine=true
