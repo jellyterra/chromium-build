@@ -1,0 +1,17 @@
+stages:
+- build
+
+build:
+    stage: build
+    timeout: 6h
+    tags:
+        - saas-linux-medium-amd64
+    script:
+        #-   apt update
+        #-   apt install bash curl gperf lsb-release libnss3 -y
+        -   lscpu
+        -   free -h
+        - . build-latest-stable.sh
+    artifacts:
+        paths:
+            - chromium-build/
